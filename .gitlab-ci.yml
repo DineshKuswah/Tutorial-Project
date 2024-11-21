@@ -6,7 +6,7 @@ build-job:
   stage: build   # Set this job to run in the `build` stage
   image: node
   script:
-    - chmod +x node_modules
+    - sudo chmod +x node_modules/.bin
     - npm install
     - npm run build
   artifacts:
